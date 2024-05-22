@@ -1,0 +1,406 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    background-color: #e1e1e1;
+    font-weight: 560;
+    height: 100vh;
+    overflow-y: hidden;
+
+
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.background{
+    z-index: 888;
+    height: 80px;
+    width: 10px;
+    position: absolute;
+    margin-top: -41.8em;
+    right: 575px;
+}
+.bg-overlay{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.05;
+    top: 0;
+}
+
+.call{
+    z-index: 666;
+    position: absolute;
+    top: 250px;
+    right: 30em;
+    width: 370px;
+}
+.call p{
+    margin-top: 20px;
+}
+.call h3{
+    font-size: 20px;
+    font-style: oblique;
+}
+.red{
+    z-index: 666;
+    position: absolute;
+    top: 35em;
+    right: 30em;
+    width: 370px;
+}
+.red p{
+    margin-top: 20px;
+}
+.red h3{
+    font-size: 20px;
+    font-style: oblique;
+}
+
+
+
+
+
+/* -------------------NAVIGATION BAR------------------------ */
+.main-navbar{
+    /* background-color: white; */
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); */
+    /* background: hsl(0 0% 100% / .1); */
+    backdrop-filter: blur(0.01rem);
+    /* position: relative; */
+    z-index: 999;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+nav .main-navbar{
+    gap: 35px;
+    margin-top: 20px;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #454545;
+    transition: 0.3s ease;
+    position: relative;
+}
+nav a:hover{
+    /* background-color: #6e7a8691; */
+    border-radius: 3px;
+    /* color: #e1e1e1; */
+    color: #143b62;
+    /* box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); */
+}
+.main-navbar a{
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+.main-navbar a:hover{
+    transform: scale(1.08);
+}
+.main-navbar a:after{
+    content:"";
+    position: absolute;
+    background-color: #0D59A5;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s ease;
+}
+.main-navbar a:hover:after{
+    width: 100%;
+}
+#svg{
+    color:#0D59A5;
+}
+nav .main-navbar li:last-child{
+    margin-left: auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: #454545;
+    margin-right: 25px;
+}
+.sidebar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background: hsla(0, 0%, 100%, 0);
+    /* background: rgba(46, 62, 70, 0.53); */
+    backdrop-filter: blur(1rem);
+    background-color: #143b6296;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    margin-top: 22px;
+    width: 100%;
+    margin-left: 35px;
+    color: #e1e1e1;
+}
+.sidebar a:hover{
+    color: #cbebf1;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+/* -------------------NAVIGATION BAR /end------------------------ */
+
+
+
+/*--------------------------------LOG IN--------------------------- */
+.pop-up{
+    z-index: 888;
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.01);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+.pop-up.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+.pop-up .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #143b62;
+    color: #e1e1e1;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.pop-up .form h2{
+    text-align: center;
+    color: #143b62;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+.pop-up .form .form-element{
+    margin: 15px 0px;
+}
+.pop-up .form .form-element label{
+    font-size: 14px;
+    color: #143b62;
+}
+.pop-up .form .form-element input[type="text"],
+.pop-up .form .form-element input[type="password"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+.pop-up .form .form-element input[type="checkbox"]{
+    margin-right: 5px;
+}
+.pop-up .form .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: linear-gradient(to top right, #143b62, #0D59A5);
+    color: #e1e1e1;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 650;
+    letter-spacing: 1.1px;
+}
+.pop-up .form .form-element a{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #0D59A5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/*--------------------------------LOG IN css end--------------------------- */
+
+
+
+
+/*--------------------------------HERO SECTION--------------------------- */
+.blue-box{
+    background-color: #143b62;
+    width: 660px;
+    height: 570px;
+    margin-top: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.bb-content{
+    position: absolute;
+    margin-top: 70px;
+    color: #e1e1e1;
+    margin-left: 85px;
+}
+.bb-content h1{
+    font-size: 80px;
+    letter-spacing: 2px;
+}
+.bb-content .fe{
+    font-size: 15px;
+    margin-top: 20px;
+    letter-spacing: .5px;
+    font-style: oblique;
+}
+.media-icons a{
+    color: #e1e1e1;
+}
+.form-element textarea{
+    margin-top: 15px;
+    padding: 10px;
+    width: 460px;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: inter;
+    border: none;
+}
+.form-element button{
+    padding: 10px 50px;
+    color: #e1e1e1;
+    background-color: #0D59A5;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    transition: 0.3s ease-in-out;
+}
+.form-element button:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(8px 8px 10px rgba(31, 31, 31, 0.3));
+}
+.m-icons{
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+.media-icons{
+    margin-top: 15px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.media-icons a{
+    /* background: linear-gradient(150deg, #e1e1e1, #00fbff);
+    background-clip: text;
+    color: transparent; */
+    color: #e1e1e1;
+}
+
+
+
+
+
+
+
+/* --------------------------FOOTER------------------------- */
+footer{
+    background-color: transparent;
+    color: #454545;
+    padding: 20px;
+    z-index: 999;
+
+    margin-top: auto;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+}
+/* --------------------------FOOTER/end------------------------- */
+
+
+
+
+/* .home .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+.home .media-icons a{
+    color: aliceblue;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+.home .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+.home .media-icons a:hover{
+    transform: scale(1.3);
+} */

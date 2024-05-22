@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviceability</title>
+    <link rel="stylesheet" href="serviceability.css">
+    <link rel="icon" type="image/png" href="assets/logo gear.jpg">
+</head>
+
+<body>
+
+
+    <div class="hero">
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg class="svg" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" height="26" viewBox="0 -960 960 960" width="26"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="serviceability.html">Serviceability</a></li>
+                <li><a href="performance.html">Performance</a></li>
+                <li><a href="aesthetic.html">Aesthetics</a></li>
+                <li><a href="features.html">Features</a></li>
+            </ul>
+            <ul class="main-navbar">
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="serviceability.html">Serviceability</a></li>
+                <li class="hideOnMobile"><a href="performance.html">Performance</a></li>
+                <li class="hideOnMobile"><a href="aesthetic.html">Aesthetics</a></li>
+                <li class="hideOnMobile"><a href="features.html">Features</a></li>
+                <!-- <li class="hideOnMobile"><button id="show-login">Log in</button></li> -->
+                <li class="hideOnMobile"><a href="#"><svg id="svg" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" height="18" width="23" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg class="svg" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+
+       
+
+        <!--------------------------- LOG IN -------------------------------->
+        <div class="pop-up">
+            <div class="close-btn">&times</div>
+            <div class="form">
+                <h2>Log In</h2>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <div class="form-element">
+                    <button>Sign in</button>
+                </div>
+                <div class="form-element">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+             <script src="login.js"></script>
+        </div>
+    </div>
+
+
+        <div class="background"></div>
+    
+
+         <!--------------------------- HERO SECTION -------------------------------->
+         <!-- <div class="bg-overlay">
+            <img src="assets/bg-overlay.jpg">
+        </div> -->
+
+
+
+        <div class="hero">
+            <p class="p1">Designed for Easy Maintenance</p>
+            <p class="p2">Our labeling machines are designed with ease of serviceability in mind. Components are accessible and modular, allowing for quick replacements and adjustments. Detailed service logs are maintained to track all maintenance activities, repairs, and part replacements. This not only helps in diagnosing problems quickly but also ensures that the machine's service history is well documented for future reference.</p>
+        </div>
+
+
+        <!-- <div class="card-container">
+            <div class="card">
+                <img src="assets/SERVICEABILITY 3-01.png">
+            </div>
+            <div class="card">
+                <img src="assets/SERVICEABILITY 2-01.png">
+            </div>
+            <div class="card">
+                <img src="assets/SERVICEABILITY-01.png">
+            </div>
+        </div> -->
+
+
+        <div class="ccontainer">
+            <div class="ccard">
+                <div class="imgbx">
+                    <img src="assets/SERVICEABILITY 3-01.png">
+                    <h3 class="txt">Operational Guide</h3>
+                </div>
+                <div class="ccontent">
+                    <div>
+                        <h3>Operational Guide</h3>
+                        <p>Maintaining machinery is crucial for efficiency and safety. We'll discuss a two-step process: inspecting machines for issues and applying identification stickers. This ensures effective labeling and reliable operation.</p>
+                        <a id="showmodal" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ccard">
+                <div class="imgbx">
+                    <img src="assets/SERVICEABILITY 2-01.png">
+                    <h3 class="txt">Maintenance Guide</h3>
+                </div>
+                <div class="ccontent">
+                    <div>
+                        <h3>Maintenance Guide</h3>
+                        <p> Regular maintenance, including cleaning, lubrication, and inspections, ensures the Automated Labeling Machine's longevity and efficiency.</p>
+                        <a id="showmodal" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ccard">
+                <div class="imgbx">
+                    <img src="assets/SERVICEABILITY-01.png">
+                    <h3 class="txt">Troubleshooting G.</h3>
+                </div>
+                <div class="ccontent">
+                    <div>
+                        <h3>Troubleshooting Guide</h3>
+                        <p>This guide addresses common problems with labeling machines, offering step-by-step instructions for identifying, diagnosing, and resolving issues effectively.</p>
+                        <a id="showmodal" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------ SHOW MODAL ------------------------->
+        <section class="sec1">
+            <span class="overlay"></span>
+            <div class="modal-box">
+                <h2>OPERATION GUIDE:</h2>
+                <h3>Step 1: Inspecting the Machine</h3>
+                <p>Examine the machine to ensure that all screws are intact there are no damages and no other issues that could impact its performance. This step is essential to ensure the operation of the labeling process.</p>
+                <h3>Step 2: Applying Stickers</h3>
+                <p>Affix a sticker, onto the machine as part of the preparations. This sticker can serve as an indicator or label for the machine itself aiding in organization and easy identification.</p>
+                <h3>Step 3: Positioning Bottles and Adjusting Parameters</h3>
+                <p>Align the bottle, within the machine ensuring it is positioned accurately for labeling. Also adjust parameters on the machine to tune the labeling process according to specific bottle dimensions.</p>
+                <h3>Step 4: Power Up and Start</h3>
+                <p>Turn on the power supply to activate the machine. Initiate the labeling process by pressing the start button on the control panel, beginning the sequence that applies labels to the bottles.</p>
+                <h3>Step 5: Trial Run and Adjustment</h3>
+                <p>Perform a trial run of the labeling process to test the machine's performance. Make necessary adjustments based on the trial findings, ensuring that the labels are applied accurately and efficiently.</p>
+                <h3>Step 6: Sample Inspection and Adjustment</h3>
+                <p>Inspect a sample of labeled glass bottles to identify any errors or issues. If any discrepancies are found, make the necessary adjustments to improve the labeling accuracy.</p>
+                <h3>Step 7: Commence Labeling Process</h3>
+                <p>After confirming the satisfactory outcomes from Steps 1 to 6, proceed with the actual labeling process. This step marks the official start of applying labels to the glass bottles.</p>
+                <h3>Step 8: Machine Shutdown</h3>
+                <p>Once the labeling task is complete, turn off the labeling machine using the control panel. This step ensures the safe and proper shutdown of the equipment, completing the labeling process</p>
+                <h2 style="margin-top: 20px;">In case of Malfunction/ Accident:</h2>
+                <h3>Step 1: Push Emergency Push button</h3>
+                <p> Emergency push buttons provide an important safety purpose by offering a rapid and reliable way to stop machinery or operations in an emergency.</p>
+              </div>
+          </section>
+          <script>
+            const section = document.querySelector(".sec1"),
+              overlay = document.querySelector(".overlay"),
+              showBtn = document.querySelector("#showmodal"),
+              closeBtn = document.querySelector(".close-btn");
+            showBtn.addEventListener("click", () => section.classList.add("active"));
+            overlay.addEventListener("click", () =>
+              section.classList.remove("active")
+            );
+            closeBtn.addEventListener("click", () =>
+              section.classList.remove("active")
+            );
+          </script>
+
+          
+
+        
+      
+            <div class="container">
+                <div class="words">
+                <p class="p1">WE OFFER TO DESIGN YOUR PRODUCT </p>
+                <p class="p2">CONNECT WITH US...</p>
+                </div>
+                <a href="#"><button class="btn">CONTACT</button></a>
+            </div>
+
+    
+
+
+    <!------------------------- FOOTER ------------------------------->
+    <footer>
+        <p>Copyright © 2024 All Rights Reserved / Design by :  <b style="color:#0d59a5; font-weight: 550;">Group 8</b></p>
+    </footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/logo gear.jpg">
+</head>
+
+<body>
+
+    <div class="hero">
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg class="svg" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" height="26" viewBox="0 -960 960 960" width="26"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="serviceability.html">Serviceability</a></li>
+                <li><a href="performance.html">Performance</a></li>
+                <li><a href="aesthetic.html">Aesthetics</a></li>
+                <li><a href="features.html">Features</a></li>
+            </ul>
+            <ul class="main-navbar">
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="serviceability.html">Serviceability</a></li>
+                <li class="hideOnMobile"><a href="performance.html">Performance</a></li>
+                <li class="hideOnMobile"><a href="aesthetic.html">Aesthetics</a></li>
+                <li class="hideOnMobile"><a href="features.html">Features</a></li>
+                <!-- <li class="hideOnMobile"><button id="show-login">Log in</button></li> -->
+                <li class="hideOnMobile"><a href="#"><svg id="svg" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" height="18" width="23" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg class="svg" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+
+
+
+        <!--------------------------- HERO SECTION -------------------------------->
+        <section class="home">
+            <div class="content">
+                <h1>AUTOMATED LABELING MACHINE</h1>
+                <p class="p1" style="font-weight: 600; font-style: italic;">“Provide Safe and Clean Labeling for your Product".</p>
+                <p style="font-weight: 350;"><b>Unleash Productivity:</b> With our Automatic
+                    Labelling Machine, you'll achieve unmatched
+                    throughput, ensuring your products are labeled
+                    flawlessly and on time, every time.</p>
+                    <a href="discover more.html"><button class="btn">DISCOVER MORE</button></a>
+            </div>
+            <!-- <div class="media-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div> -->
+        </section>
+
+
+
+        <!--------------------------- LOG IN -------------------------------->
+        <div class="pop-up">
+            <div class="close-btn">&times</div>
+            <div class="form">
+                <h2>Log In</h2>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <div class="form-element">
+                    <button>Sign in</button>
+                </div>
+                <div class="form-element">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="login.js"></script>
+
+
+
+        <!--------------------------- BEST AUTOMATED -------------------------------->
+        </section>
+        <div class="hero1">
+            <section class="home1">
+                <div class="content1">
+                    <h1>THE BEST AUTOMATED LABELING SOLUTION</h1>
+                    <p class="p1">High Quality - Low Risk</p>
+                    <p class="p2">.Engineered to maximize productivity and safety in your labeling operation</p>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+
+
+    <!---------------------- MACHINE IMAGES ------------------------>
+    <div class="top-view"><img src="assets/top-view.png"></div>
+
+    <div class="top-view1"><img src="assets/topvwb.png"></div>
+    <div class="front-view"><img src="assets/front-viewwb.png"></div>
+    <div class="iso-view"><img src="assets/isometric-viewwb.png"></div>
+
+
+
+    <!------------------------- TABLE ------------------------------->
+    <div class="blue-box">
+        <table class="t1">
+            <tr id="header">
+                <th>399 RPM</th>
+                <th>50 mA</th>
+                <th>16x2</th>
+                <th>12v</th>
+            </tr>
+            <tr>
+                <td>Run Speed</td>
+                <td>Run Current</td>
+                <td>LCD Module Display</td>
+                <td>Light Indicator (lamp)</td>
+            </tr>
+        </table>
+
+        <table class="t2">
+            <tr id="header2">
+                <th>E18-D80NK (80mm)</th>
+            </tr>
+            <tr>
+                <td>Photoelectric sensor/Proximity sensor</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!------------------------- WE DEFINE ------------------------------->
+    <div class="content3">
+        <img src="assets/content3-img.png">
+    </div>
+
+
+    <div class="we-define">
+        <p class="c3-heading">WE DEFINE PRECISION</p>
+        <p class="c3-parag">Our engineers develop turnkey solutions that improve performance
+            and profitability while lowering overall risk.</p>
+        <button class="c3-btn"><a href="contact.html">CONTACT</a></button>
+    </div>
+
+
+    <!------------------------- DEDICATED FROM DAY ONE ------------------------------->
+    <div class="gear">
+        <img src="assets/gear.png">
+    </div>
+
+
+    <div class="white-box">
+        <div class="wb">
+        <p class="c3-p1">ABOUT</p>
+        <p class="c3-p2">DEDICATED FROM DAY ONE</p>
+        <p class="c3-p3">It's not an accident that we deliver the results you expected.
+             We build our reputation on peerless products matched with innovative solutions.</p>
+        </div>
+    </div>
+
+
+    <!------------------------- STAY INFORMED ------------------------------->
+    <div class="stay-informed">
+        <div class="s-i">
+        <p class="si1">STAY INFORMED</p>
+        <p class="si2">We deliver information about new products, innovations, and insights to your inbox.</p>
+        <button class="si-btn"><a href="#">SUBSCRIBE</a></button>
+        </div>
+    </div>
+
+
+    <!------------------------- MAP / LOCATION ------------------------------->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5551.636951162597!2d123.90180491944083!3d10.2937668640646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99be0240f1f91%3A0x9e27c0301ab69bb9!2sCebu%20Technological%20University%20-%20Main%20Campus!5e0!3m2!1sen!2sph!4v1716131457094!5m2!1sen!2sph" width="100%" height="350" style="border:0; object-fit:cover;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="mp">
+            <p class="m1">CONFIDENCE FROM COAST TO COAST</p>
+            <p class="m2">Our team are located in Cebu, City to help manage your project
+                and help you succeed</p>
+            <p class="m3">LOCATION &nbsp;-></p>
+        </div>
+    </div>
+
+
+
+    <!------------------------- FOOTER ------------------------------->
+    <footer>
+        <p>Copyright © 2024 All Rights Reserved / Design by :  <b style="color:#0d59a5; font-weight: 550;">Group 8</b></p>
+    </footer>
+
+
+
+</body>
+</html>

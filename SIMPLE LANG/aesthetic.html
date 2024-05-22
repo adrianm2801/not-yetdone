@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Aesthetics</title>
+	<link rel="icon" href="img/icon.jpg" type="icon/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+	<link rel="stylesheet" href="aestheticnml.css">
+	<link rel="stylesheet" href="aesthetic.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');</style>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/logo gear.jpg">
+</head>
+
+<body>
+
+    <div class="hero">
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg class="svg" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" height="26" viewBox="0 -960 960 960" width="26"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="serviceability.html">Serviceability</a></li>
+                <li><a href="performance.html">Performance</a></li>
+                <li><a href="aesthetic.html">Aesthetics</a></li>
+                <li><a href="features.html">Features</a></li>
+            </ul>
+            <ul class="main-navbar">
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="serviceability.html">Serviceability</a></li>
+                <li class="hideOnMobile"><a href="performance.html">Performance</a></li>
+                <li class="hideOnMobile"><a href="aesthetic.html">Aesthetics</a></li>
+                <li class="hideOnMobile"><a href="features.html">Features</a></li>
+                <!-- <li class="hideOnMobile"><button id="show-login">Log in</button></li> -->
+                <li class="hideOnMobile"><a href="#"><svg id="svg" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" height="18" width="23" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg class="svg" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+
+
+
+
+
+
+
+	<!-- div .wrapp -->
+	<div class="wrapp">
+
+		<h1 class="title">AESTHETICS</h1>
+
+		<ul class="gallery">
+			<li class="gallery__item" data-fancybox="gallery" data-src="assets/gallery/front-view(1).png">
+				<img src="assets/gallery/front-view(1).png" alt="1" class="gallery__img">
+				<!-- <span class="zoom">Front view</span> -->
+			</li>
+			<li class="gallery__item" data-fancybox="gallery" data-src="assets/gallery/front-viewwb.png">
+				<img src="assets/gallery/front-viewwb.png" alt="2" class="gallery__img">
+				<!-- <span class="zoom">GR8</span> -->
+                <span class="txt">front view</span>
+			</li>
+			<li class="gallery__item" data-fancybox="gallery" data-src="assets/gallery/left-side view.png">
+				<img src="assets/gallery/left-side view.png" alt="3" class="gallery__img">
+                <span class="txt">front view</span>
+				<!-- <span class="zoom">GR8</span> -->
+			</li>
+			<li class="gallery__item" data-fancybox="gallery" data-src="assets/gallery/right-side view.png">
+				<img src="assets/gallery/right-side view.png" alt="4" class="gallery__img">
+                <span class="txt">front view</span>
+				<!-- <span class="zoom">GR8</span> -->
+			</li>
+			<li class="gallery__item" data-fancybox="gallery" data-src="assets/gallery/topvwb.png">
+				<img src="assets/gallery/topvwb.png" alt="5" class="gallery__img">
+                <span class="txt">front view</span>
+				<!-- <span class="zoom">GR8</span> -->
+			</li>
+			<li class="gallery__item" data-fancybox="gallery" data-src="assets/gallery/isometric-viewwb.png">
+				<img src="assets/gallery/isometric-viewwb.png" alt="6" class="assets/gallery/isometric-viewwb.png">
+                <span class="txt">front view</span>
+				<!-- <span class="zoom">GR8</span> -->
+			</li>
+		</ul>
+
+	</div>
+	<!-- /div .wrapp END -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script>
+		Fancybox.bind('[data-fancybox="gallery"]', {
+			dragToClose: false,
+
+			closeButton: "top",
+
+			Image: {
+				zoom: false,
+			},
+
+			on: {
+				initCarousel: (fancybox) => {
+					const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+
+					fancybox.$container.style.setProperty(
+						"--bg-image",
+						`url("${slide.$thumb.src}")`
+					);
+				},
+				"Carousel.change": (fancybox, carousel, to, from) => {
+					const slide = carousel.slides[to];
+
+					fancybox.$container.style.setProperty(
+						"--bg-image",
+						`url("${slide.$thumb.src}")`
+					);
+				},
+			},
+		});
+	</script>
+</body>
+
+</html>
